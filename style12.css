@@ -1,0 +1,357 @@
+
+/*----------------- Main Style ----------------*/
+html{
+    font-size: 18px;
+    overflow-x: hidden;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*background-color: #ff7f50;*/
+    background-color: #F8F8FA;
+}
+
+/*--------------- Navbar Style ---------------*/
+
+.navbar{
+    width: 100%;
+    height: auto;
+    background-color: #E5E5E5;
+}
+
+.navbar .row{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.navbar .row ul li{
+    display: inline-block;
+}
+
+.navbar .row ul li a{
+    color: #000;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0 15px;
+    opacity: 0.6;
+    position: relative;
+}
+
+.navbar .row ul li a:hover{
+    opacity: 1;
+}
+
+
+.navbar .row ul li a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #1863D3;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: all 1s linear;
+    border-radius: 3px;
+}
+
+.navbar .row ul li a:hover::after{
+    width: 100%;
+}
+
+@media (max-width: 667px) {
+    .navbar .row{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
+    .navbar .row .navbar-brand{
+        margin-top: 20px;
+    }
+}
+
+/*------- Header style ---------*/
+
+.header {
+    width: 100%;
+    height: auto;
+}
+
+.header .header-one {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+}
+
+.header .header-one .header-top{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.header .header-one .header-top .box{
+    width: 160px;
+    height: 50px;
+    background-color: rgba(128, 128, 128, 0.32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .header-two{
+    width: 100%;
+    height: auto;
+    background-color: #FCC400;
+}
+
+.header .header-two .header-bottom{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.header .header-two .header-bottom h2{
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.header .header-two .header-bottom a{
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 667px) {
+    .header .header-one .header-top{
+        flex-wrap: wrap;
+    }
+    .header .header-one .header-top .box{
+        margin: 10px 5px;
+        width: 100%;
+    }
+    .header-bottom{
+        text-align: center;
+    }
+}
+
+@media (min-width: 667px) and (max-width: 1200px) {
+    .header .header-one .header-top{
+        flex-wrap: wrap;
+    }
+    .header .header-one .header-top .box{
+        width: 45% !important;
+        margin: 10px 5px;
+    }
+}
+
+.header .haeder-there {
+    width: 100%;
+    height: auto;
+}
+
+.header .haeder-there .header-past{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.header .haeder-there .header-past .top{
+    margin: 15px 0;
+}
+
+.header .haeder-there .header-past .bootom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px !important;
+}
+
+.header .haeder-there .header-past .bootom .box-one{
+    width: 160px;
+    height: 160px;
+    background-color: #E5E5E5;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+@media (min-width: 667px) and (max-width: 1200px) {
+    .header .haeder-there .header-past .bootom{
+        flex-wrap: wrap;
+
+    }
+    .header .haeder-there .header-past .bootom .box-one{
+        margin: 10px 10px;
+    }
+}
+
+@media (max-width: 667px) {
+    .header .haeder-there .header-past .bootom{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
+    .header .haeder-there .header-past .bootom .box-one{
+        margin: 10px 10px;
+    }
+}
+.bootom img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/*--- Main style ---*/
+
+.main {
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+    margin-top: 100px;
+}
+
+.main .main__h2{
+    margin: 20px 0;
+}
+
+.main .cards .card{
+    width: 323px;
+    height: auto;
+    background-color: #fff;
+    margin: 20px 0;
+}
+
+
+
+.main .cards .card:hover{
+    box-shadow: 0 25px 35px rgba(165, 165, 166, 0.13);
+}
+
+.main .cards .card .main__img{
+    width: 100%;
+}
+
+.main .cards .card .main__p{
+    padding: 0 8px;
+    opacity: 0.5;
+}
+
+.main .cards .card .sana{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px;
+    opacity: 0.5;
+}
+
+.main .cards .card:hover .sana{
+    opacity: 1;
+    transition: all 0.5s linear;
+}
+
+.main .cards .card:hover .main__p{
+    opacity: 1;
+    transition: all 0.5s linear;
+}
+
+.main .cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.btn{
+    width: 100%;
+    height: 50px;
+    background-color: #3a4357;
+    border: none;
+    border: 1px solid black;
+    opacity: 0.5;
+    border-radius: 5px;
+    margin: 20px 0;
+    color: #fff;
+}
+
+.btn:hover{
+    opacity: 1;
+    transition: all 0.5s linear;
+}
+
+/*Footer style*/
+
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+}
+
+.footer .footer__row{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.footer .footer__row .footer__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer .footer__row .footer__top div p{
+    opacity: 0.5;
+}
+
+.footer .footer__row .footer__top div p:hover{
+    opacity: 1;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.footer__bootom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+}
+
+.left select, img{
+    margin-right: 20px;
+}
+
+.select{
+    width: 50px !important;
+    height: 20px;
+    background-color: #F8F8FA;
+    color: #000;
+    border: none;
+    border: 1px solid black;
+}
+
+.h44{
+    margin: 0 !important;
+    margin-left: 8px !important;
+}
